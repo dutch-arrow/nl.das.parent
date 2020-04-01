@@ -16,7 +16,7 @@
 	<packaging>pom</packaging>
 
 	<scm>
-		<url>https://maven.pkg.github.com/tpijl/artifactory</url>
+		<url>https://maven.pkg.github.com/dutch-arrow-software/artifactory</url>
 	</scm>
 
 	<properties>
@@ -129,7 +129,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/tpijl/artifactory</url>
+			<url>https://maven.pkg.github.com/dutch-arrow-software/artifactory</url>
 		</repository>
 	</distributionManagement>
 </project>
