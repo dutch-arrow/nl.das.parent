@@ -120,4 +120,12 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/tpijl/artifactory</url>
+		</repository>
+	</distributionManagement>
 </project>
