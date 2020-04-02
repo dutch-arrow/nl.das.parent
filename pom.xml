@@ -126,14 +126,8 @@
 	</build>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>github-snapshot</id>
-            <name>GitHub snapshot</name>
-            <url>https://maven.pkg.github.com/dutch-arrow-software</url>
-            <uniqueVersion>true</uniqueVersion>
-        </snapshotRepository>
         <repository>
-            <id>github-release</id>
+            <id>github</id>
             <name>GitHub release</name>
             <url>https://maven.pkg.github.com/dutch-arrow-software</url>
             <uniqueVersion>false</uniqueVersion>
