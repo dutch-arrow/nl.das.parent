@@ -23,7 +23,7 @@ jobs:
           java-package: jdk # (jre, jdk, or jdk+fx) - defaults to jdk
           architecture: x64 # (x64 or x86) - defaults to x64
       - name: Create settings.xml
-        run: echo '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"><servers><server><id>github</id><username>tpijl</username><password>74d8135c17fdc5cbbab5ee111be5cce880823442</password></server></servers></settings>' > settings.xml
+        run: echo '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"><servers><server><id>github-release</id><username>tpijl</username><password>74d8135c17fdc5cbbab5ee111be5cce880823442</password></server><server><id>github-snapshot</id><username>tpijl</username><password>74d8135c17fdc5cbbab5ee111be5cce880823442</password></server></servers></settings>' > settings.xml
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Maven Deploy
