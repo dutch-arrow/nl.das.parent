@@ -27,9 +27,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Maven Deploy
-        run:
-          echo env.$GITHUB_TOKEN 
-          mvn deploy -s settings.xml
+        run: mvn deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}} # GITHUB_TOKEN is the default env for the password
           
