@@ -125,11 +125,18 @@
 		</pluginManagement>
 	</build>
 
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/dutch-arrow-software</url>
-		</repository>
-	</distributionManagement>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>github-snapshot</id>
+            <name>GitHub snapshot</name>
+            <url>https://maven.pkg.github.com/tpijl/artifacts/</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+        <repository>
+            <id>github-release</id>
+            <name>GitHub release</name>
+            <url>https://maven.pkg.github.com/tpijl/artifacts/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
 </project>
