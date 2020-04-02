@@ -129,13 +129,13 @@
         <snapshotRepository>
             <id>github-snapshot</id>
             <name>GitHub snapshot</name>
-            <url>https://maven.pkg.github.com/dutch-arrow-software/artifacts/</url>
+            <url>https://maven.pkg.github.com/dutch-arrow-software</url>
             <uniqueVersion>true</uniqueVersion>
         </snapshotRepository>
         <repository>
             <id>github-release</id>
             <name>GitHub release</name>
-            <url>https://maven.pkg.github.com/dutch-arrow-software/artifacts/</url>
+            <url>https://maven.pkg.github.com/dutch-arrow-software</url>
             <uniqueVersion>false</uniqueVersion>
         </repository>
     </distributionManagement>
