@@ -16,7 +16,7 @@
 	<packaging>pom</packaging>
 
 	<scm>
-		<url>https://maven.pkg.github.com/dutch-arrow-software</url>
+		<url>https://maven.pkg.github.com/dasoss</url>
 	</scm>
 
 	<properties>
