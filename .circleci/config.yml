@@ -7,8 +7,9 @@ jobs:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
+      - checkout
       - run:
-          name: The First Step
+          name: Code Has Arrived
           command: |
-            echo 'Hello World!'
-            echo 'This is the delivery pipeline'
+            ls -al
+            echo '^^^That should look familiar^^^'
